@@ -2,7 +2,8 @@
   Multithreaded DNS server<br>
 
 Запуск:<br>
-  sudo ./run.sh proxy2.py<br>
+  chmod +x proxy2.py<br>
+  sudo ./proxy2.py<br>
   
 Тест:<br>
   dig test.test @localhost<br>
