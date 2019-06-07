@@ -104,7 +104,7 @@ class DNSHandler(socketserver.BaseRequestHandler):
                 self.dns_response_questions(accepted_questions) +
                 self.dns_response_answers(accepted_questions)
             )
-        # Ask remote server
+        # Ask remote server (now UDP)
         else:
             server = (REMOTE_ADDR, REMOTE_PORT)
             sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
