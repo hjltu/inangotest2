@@ -1,12 +1,13 @@
 # inangotest2
-Multithreaded DNS server
-Запуск:
-  sudo ./run.sh proxy2.py
-  
-Тест:
-  dig test.test @localhost
+  Multithreaded DNS server<br>
 
-Задача:
+Запуск:<br>
+  sudo ./run.sh proxy2.py<br>
+  
+Тест:<br>
+  dig test.test @localhost<br>
+
+Задача:<br>
 Написать DNS прокси-сервер с поддержкой "черного" списка доменных имен.
 
 1.	Для параметров используется конфигурационный файл, считывающийся при запуске сервера;
