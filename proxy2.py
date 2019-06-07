@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 About:
-    proxy.py is Multi-threaded UDP Server
+    proxy2.py is Multi-threaded UDP Server
 
 Source project:
     https://github.com/pathes/fakedns
@@ -39,7 +39,7 @@ What it does:
     if not, the remote server is requested
 
 Usage:
-    chmod +x proxy.py
+    chmod +x proxy2.py
     sudo ./proxy2.py
 
     dig test.test @localhost
@@ -104,7 +104,7 @@ class DNSHandler(socketserver.BaseRequestHandler):
                 self.dns_response_questions(accepted_questions) +
                 self.dns_response_answers(accepted_questions)
             )
-        # Ask remote server (now UDP)
+        # Ask remote server (now UDP, less than 512B)
         else:
             server = (REMOTE_ADDR, REMOTE_PORT)
             sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
