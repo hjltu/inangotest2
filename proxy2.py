@@ -39,7 +39,8 @@ What it does:
     if not, the remote server is requested
 
 Usage:
-    sudo ./run.sh proxy2.py
+    chmod +x proxy.py
+    sudo ./proxy2.py
 
     dig test.test @localhost
 
